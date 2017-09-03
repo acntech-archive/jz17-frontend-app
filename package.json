@@ -1,0 +1,25 @@
+{
+  "name": "jz17-frontend-app",
+  "version": "1.0.0",
+  "description": "Sample frontend app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon --inspect=5858 app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristian Haugene",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "js-yaml": "^3.9.1",
+    "pug": "^2.0.0-rc.3",
+    "serve-favicon": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
