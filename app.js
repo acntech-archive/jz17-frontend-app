@@ -22,6 +22,7 @@ app.get('/', function(req, res) {
   todos.fetch(config, function (err, todos) {
     if (err) {
       res.status(500).send('SKjedde noe galt under henting av todos');
+      console.log(err);
       return;
     }
 

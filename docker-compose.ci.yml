@@ -3,4 +3,4 @@ version: '3'
 services:
   frontend:
     build: .
-    image: registry.jz17demo.istheshit.org:5000/jz17-frontend-app/${FORMATTED_BRANCH_NAME}:${BUILD_NUMBER}
+    image: registry.jz17demo.acntech.no:5000/jz17-frontend-app/${FORMATTED_BRANCH_NAME}:${BUILD_NUMBER}
