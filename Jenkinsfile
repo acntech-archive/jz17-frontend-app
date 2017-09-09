@@ -1,7 +1,8 @@
 node ('jz17-builder') {
 
-  stage ('Sjekk ut kode') {
+  stage('Sjekk ut kode') {
     checkout scm
+    env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
   }
 
   stage('Build environment setup') {
