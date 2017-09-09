@@ -14,5 +14,9 @@ COPY package.json /usr/src/app/
 RUN npm install && npm cache clean --force
 COPY . /usr/src/app
 
+# Add labels
+ARG GIT_COMMIT=unknown
+LABEL jz17demo.git.commitHash=$GIT_COMMIT
+
 CMD [ "npm", "start" ]
 EXPOSE 3000
